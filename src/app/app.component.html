@@ -1,2 +1,21 @@
-<mat-toolbar color="primary">Primary</mat-toolbar>
-<mat-toolbar color="accent">Accent</mat-toolbar>
+<mat-toolbar color="primary">
+  <h3>{{title}}</h3>
+</mat-toolbar>
+<main>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{tagline}}</mat-card-title>
+      <mat-card-subtitle>Features</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <ul>
+        <li *ngFor="let feature of features">
+          {{feature}}
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+  <mat-card style="text-align: center">
+    <a mat-raised-button color="accent" href="https://github.com/Microflash/angular-material-starter">Source at Github</a>
+  </mat-card>
+</main>
