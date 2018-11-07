@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ThemeService } from './globals/service/theme.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Angular Material Starter';
   tagline = 'A simple starter project for Angular Material 6';
   features = [
@@ -15,5 +17,16 @@ export class AppComponent {
       'Material Design Icons',
       'SCSS for theme customization',
       'Dependency Module to load Material Components'
-  ]
+  ];
+  isDark: Observable<Boolean>;
+
+  ngOnInit(): void {
+    this.isDark = this.themeService.isDark;
+  }
+
+  constructor(private themeService: ThemeService) { }
+
+  toggleDarkTheme(checked: Boolean) {
+    this.themeService.toggleDarkTheme(checked);
+  }
 }

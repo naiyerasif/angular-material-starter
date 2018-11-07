@@ -3,19 +3,21 @@
 A simple starter project for Angular Material 6
 
 #### Features
-- Angular 6
 - Angular Material 6
 - Polyfills for IE
 - Native Font Stack (instead of Roboto)
 - Material Design Icons
-- SCSS for theme customization
+- SASS for theme customization
+- Support for Light and Dark themes
 - Dependency Module to load Material Components
 
-## Development server
+## Development
+
+#### Development Server
 
 `yarn start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
+#### Build
 
 `yarn build` spawns a production build of the project. The build artifacts will be stored in the `dist/angular-material-starter` directory.
 

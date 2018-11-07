@@ -86,6 +86,17 @@ $custom-theme: mat-light-theme($custom-primary, $custom-accent, $custom-warn);
 // Generate theme
 @include angular-material-theme($custom-theme);
 
+// Dark theme
+.dark-theme {
+    color: $light-primary-text;
+    $dark-primary: mat-palette($mat-emerald);
+    $dark-accent:  mat-palette($mat-ruby);
+    $dark-warn:    mat-palette($mat-red);
+    $dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+    @include angular-material-theme($dark-theme);
+}
+
 // Resets
 body {
   margin: 0;

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialDependenciesModule } from './globals/module/material-dependencies/material-dependencies.module';
 
 import { AppComponent } from './app.component';
+import { ThemeService } from './globals/service/theme.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { AppComponent } from './app.component';
     MaterialDependenciesModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ThemeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
