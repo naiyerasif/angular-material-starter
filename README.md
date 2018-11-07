@@ -1,25 +1,26 @@
 # Angular Material Starter
 
-A simple starter project for Angular Material 6
+A simple starter project for Angular Material 7
 
 #### Features
-- Angular Material 6
+- Angular Material 7
 - Polyfills for IE
 - Native Font Stack (instead of Roboto)
 - Material Design Icons
 - SASS for theme customization
 - Support for Light and Dark themes
 - Dependency Module to load Material Components
+- Hot Module Replacement for development
 
 ## Development
 
 #### Development Server
 
-`yarn start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. You can also use `npm run start:hmr` to take advantage of Hot Module Replacement.
 
 #### Build
 
-`yarn build` spawns a production build of the project. The build artifacts will be stored in the `dist/angular-material-starter` directory.
+`npm run build` spawns a production build of the project. The build artifacts will be stored in the `dist/angular-material-starter` directory.
 
 ## Further help
 
