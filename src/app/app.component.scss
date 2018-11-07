@@ -1,7 +1,3 @@
-ul {
-  list-style-type: '·  ';
-}
-
 li {
   padding-bottom: 0.5em;
 }
@@ -9,6 +5,10 @@ li {
 .mat-card-title {
   font-size: 1.5em;
   font-weight: 400;
+}
+
+.mat-card-subtitle {
+  padding-top: 1em;
 }
 
 .filler {
