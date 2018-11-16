@@ -2,9 +2,52 @@ li {
   padding-bottom: 0.5em;
 }
 
+.mat-button {
+  vertical-align: middle;
+}
+
+.mat-button-wrapper img {
+  height: 32px;
+}
+
+.mat-button-wrapper span {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.promo {
+  padding: 4rem 3rem 3rem;
+  text-align: center;
+}
+
+.promo .mat-h1 {
+  font-size: 3.5rem;
+  line-height: normal;
+  font-weight: 300;
+}
+
+.promo .mat-h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: normal;
+  font-weight: 300;
+}
+
+.features {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  padding: 2rem 3rem;
+}
+
+@media (min-width: 900px) {
+  .features {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+
 .mat-card-title {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.25em;
 }
 
 .mat-card-subtitle {
@@ -13,4 +56,9 @@ li {
 
 .filler {
   flex: 1 1 auto;
+}
+
+footer {
+  padding: 2rem 4rem 4rem;
+  text-align: center;
 }

@@ -16,6 +16,8 @@ A simple starter project for Angular Material 7
 
 #### Development Server
 
+> `bash` is a prerequisite for this starter to work. On Windows, you can use Git Bash, Cygwin or WSL.
+
 `npm start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. You can also use `npm run start:hmr` to take advantage of Hot Module Replacement.
 
 #### Build

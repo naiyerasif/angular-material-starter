@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "start:hmr": "ng serve --configuration hmr",
-    "build": "ng build --prod",
-    "build:dev": "ng build",
+    "start": "npm run build:themes && ng serve",
+    "start:hmr": "npm run build:themes && ng serve --configuration hmr",
+    "build": "npm run build:themes && ng build --prod",
+    "build:dev": "npm run build:themes && ng build",
+    "build:themes": "bash ./tools/build-themes.sh",
+    "build:github": "npm run build:themes && ng build --prod --output-path docs --base-href https://microflash.github.io/angular-material-starter/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

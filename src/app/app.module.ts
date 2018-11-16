@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialDependenciesModule } from './globals/module/material-dependencies/material-dependencies.module';
+import { ThemePickerModule } from "./module/theme-picker";
+
+import { MaterialDependenciesModule } from './module/material-dependencies/material-dependencies.module';
 
 import { AppComponent } from './app.component';
-import { ThemeService } from './globals/service/theme.service';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,10 @@ import { ThemeService } from './globals/service/theme.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialDependenciesModule,
-    AppRoutingModule
-  ],
-  providers: [
-    ThemeService
+    AppRoutingModule,
+    ThemePickerModule
   ],
   bootstrap: [AppComponent]
 })

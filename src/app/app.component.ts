@@ -1,33 +1,57 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ThemeService } from './globals/service/theme.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"]
 })
-export class AppComponent implements OnInit {
-  title = 'Angular Material Starter';
-  tagline = 'A simple starter project for Angular Material 7';
+export class AppComponent {
+  title = "Material Starter";
+  tagline = "A simple starter project for Angular Material 7";
   features = [
-      'Angular Material 7',
-      'Polyfills for IE',
-      'Native Font Stack (instead of Roboto)',
-      'Material Design Icons',
-      'SCSS for theme customization',
-      'Dependency Module to load Material Components',
-      'Hot Module Replacement for development'
+    {
+      title: "Latest and Greatest",
+      description:
+        "Latest version of Angular, Angular Material and dependencies"
+    },
+    {
+      title: "Sensibly Compatible",
+      description:
+        "Polyfills for IE and older browsers for graceful degradation and progressive enhancement"
+    },
+    {
+      title: "System fonts",
+      description:
+        "Native Font Stack (instead of Roboto) for better legibility and glyph support"
+    },
+    {
+      title: "SASS Support",
+      description:
+        "SASS-based styling for advanced theme customization with toolkit to generate multiple themes"
+    },
+    {
+      title: "Theme Manager",
+      description:
+        "Inbuilt theme management module with bundled light and dark themes"
+    },
+    {
+      title: "Material Iconography",
+      description:
+        "Material Design Icons with a huge set of icons and style variations"
+    },
+
+    {
+      title: "No-fuss Material Module",
+      description:
+        "Ready-to-use (and customize) Dependency Module to load Material Components"
+    },
+    {
+      title: "Faster Development",
+      description:
+        "Hot Module Replacement for development workflow and optimized builds for production"
+    }
   ];
-  isDark: Observable<Boolean>;
 
-  ngOnInit(): void {
-    this.isDark = this.themeService.isDark;
-  }
-
-  constructor(private themeService: ThemeService) { }
-
-  toggleDarkTheme(checked: Boolean) {
-    this.themeService.toggleDarkTheme(checked);
-  }
+  constructor() {}
 }

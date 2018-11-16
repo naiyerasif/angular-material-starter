@@ -1,10 +1,10 @@
-@import "app";
-@import "assets/highlightjs/material-light";
+@import "../../app";
+@import "../highlightjs/material-dark";
 
-// Define the light theme.
+// Define the dark theme.
 $primary: mat-palette($mat-emerald);
 $accent: mat-palette($mat-ruby);
 $warn: mat-palette($mat-red);
 
-$theme: mat-light-theme($primary, $accent, $warn);
+$theme: mat-dark-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);

@@ -1,0 +1,82 @@
+@import '../node_modules/@angular/material/theming';
+
+// Switching to Native Font Stack
+$custom-typography: mat-typography-config(
+  $font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+);
+
+// Custom color palette
+$mat-emerald: (
+    50 : #e8f6f0,
+    100 : #c6e9da,
+    200 : #a1dbc1,
+    300 : #7bcda8,
+    400 : #5ec296,
+    500 : #42b783,
+    600 : #3cb07b,
+    700 : #33a770,
+    800 : #2b9f66,
+    900 : #1d9053,
+    A100 : #caffe1,
+    A200 : #97ffc5,
+    A400 : #64ffa8,
+    A700 : #4bff9a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-ruby: (
+    50 : #fee8e7,
+    100 : #fcc7c3,
+    200 : #faa19b,
+    300 : #f77b72,
+    400 : #f65f54,
+    500 : #f44336,
+    600 : #f33d30,
+    700 : #f13429,
+    800 : #ef2c22,
+    900 : #ec1e16,
+    A100 : #ffffff,
+    A200 : #ffe9e9,
+    A400 : #ffb8b6,
+    A700 : #ff9f9c,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Core Angular Material theme mixin
+@include mat-core($custom-typography);
+
+// Resets
+body {
+  margin: 0;
+  padding: 0;
+}

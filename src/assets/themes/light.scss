@@ -1,5 +1,5 @@
-@import "app";
-@import "assets/highlightjs/material-light";
+@import "../../app";
+@import "../highlightjs/material-light";
 
 // Define the light theme.
 $primary: mat-palette($mat-emerald);

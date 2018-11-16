@@ -1,27 +1,36 @@
-<main [ngClass]="{'dark-theme': isDark | async}">
+<main>
   <section class="mat-app-background">
     <mat-toolbar color="primary">
-      <h3>{{title}}</h3>
+      <button mat-button>
+        <span class="mat-button-wrapper">
+          <img src="../assets/img/angular-white-transparent.svg" alt="angular" />
+          <span>{{title}}</span>
+        </span>
+      </button>
       <span class="filler"></span>
-      <mat-slide-toggle [checked]="isDark | async" (change)="toggleDarkTheme($event.checked)"><small>Switch theme</small></mat-slide-toggle>
+      <theme-picker></theme-picker>
     </mat-toolbar>
-    <div>
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title>{{tagline}}</mat-card-title>
-          <mat-card-subtitle>Features</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <ul>
-            <li *ngFor="let feature of features">
-              {{feature}}
-            </li>
-          </ul>
-        </mat-card-content>
-      </mat-card>
-      <mat-card style="text-align: center">
-        <a mat-raised-button color="accent" href="https://github.com/Microflash/angular-material-starter">Source at Github</a>
+    <div class="promo">
+      <h1 class="mat-h1">{{"Angular " + title}}</h1>
+      <h2 class="mat-h2">{{tagline}}</h2>
+      <a mat-raised-button color="accent" href="https://github.com/Microflash/angular-material-starter">
+        <img src="../assets/img/github-circle-white-transparent.svg" />
+        <strong style="padding-left: 5px">Github</strong>
+      </a>
+    </div>
+    <div class="features">
+      <mat-card *ngFor="let feature of features">
+        <mat-card-title class="mat-card-title">{{feature.title}}</mat-card-title>
+        <mat-card-content class="mat-card-content">{{feature.description}}</mat-card-content>
       </mat-card>
     </div>
+    <footer class="mat-app-background">
+      <a mat-button href="https://github.com/Microflash/angular-material-starter/blob/master/LICENSE.md">
+        MIT Licensed
+      </a>
+      <a mat-button href="https://www.twitter.com/Microflash">
+        &copy; 2018 - present, Naiyer Asif
+      </a>
+    </footer>
   </section>
 </main>
