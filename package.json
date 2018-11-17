@@ -8,7 +8,7 @@
     "build": "npm run build:themes && ng build --prod",
     "build:dev": "npm run build:themes && ng build",
     "build:themes": "bash ./tools/build-themes.sh",
-    "build:github": "npm run build:themes && ng build --prod --output-path docs --base-href https://microflash.github.io/angular-material-starter/",
+    "build:github": "npm run build:themes && ng build --prod --output-path docs --base-href https://microflash.github.io/angular-material-starter/ && rm src/assets/dark.css src/assets/light.css",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
