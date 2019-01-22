@@ -1,4 +1,6 @@
-# Angular Material Starter
+# Angular Material Starter 
+
+[![CircleCI](https://circleci.com/gh/Microflash/angular-material-starter.svg?style=svg)](https://circleci.com/gh/Microflash/angular-material-starter)
 
 A simple starter project for Angular Material 7
 
