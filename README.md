@@ -1,6 +1,6 @@
 # Angular Material Starter 
 
-[![CircleCI](https://circleci.com/gh/Microflash/angular-material-starter.svg?style=svg)](https://circleci.com/gh/Microflash/angular-material-starter)
+[![CircleCI](https://circleci.com/gh/Microflash/angular-material-starter.svg?style=svg)](https://circleci.com/gh/Microflash/angular-material-starter) [![Greenkeeper badge](https://badges.greenkeeper.io/Microflash/angular-material-starter.svg)](https://greenkeeper.io/)
 
 A simple starter project for Angular Material 7
 
