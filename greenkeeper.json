@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "@types/jasmine",
+    "@types/jasminewd2",
+    "@types/node",
+    "jasmine-core",
+    "jasmine-spec-reporter",
+    "karma",
+    "karma-chrome-launcher",
+    "karma-coverage-istanbul-reporter",
+    "karma-jasmine",
+    "karma-jasmine-html-reporter",
+  ]
+}
