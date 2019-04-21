@@ -16,5 +16,5 @@ action "Publish" {
     BUILD_SCRIPT = "npm install && npm run build:github"
     FOLDER = "docs"
   }
-  secrets = ["DEPLOY_TOKEN"]
+  secrets = ["d9fa8d9cc2af521516fe450835b353f48754c7e6"]
 }
