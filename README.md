@@ -1,9 +1,9 @@
 # Angular Material Starter
 
-A simple starter project for Angular Material 7
+A simple starter project for Angular Material
 
 #### Features
-- Angular Material 7
+- Angular Material
 - Polyfills for IE
 - Native Font Stack (instead of Roboto)
 - Material Design Icons
