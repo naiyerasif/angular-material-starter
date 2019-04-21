@@ -16,5 +16,5 @@ action "Publish" {
     BUILD_SCRIPT = "npm install && npm run build:github"
     FOLDER = "docs"
   }
-  secrets = ["NG_MATERIAL_STARTER_DPLY_TKN"]
+  secrets = ["ACCESS_TOKEN"]
 }
