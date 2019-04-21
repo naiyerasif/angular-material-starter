@@ -16,7 +16,5 @@ action "Publish" {
     BUILD_SCRIPT = "npm install && npm run build:github"
     FOLDER = "docs"
   }
-  secrets = [
-    "DEPLOY_TKN_NAME",
-  ]
+  secrets = ["ACCESS_TOKEN"]
 }
