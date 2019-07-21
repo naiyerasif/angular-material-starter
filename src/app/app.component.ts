@@ -8,13 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = "Material Starter";
-  tagline = "A simple starter project for Angular Material 7";
+  tagline = "is a template for projects based on Angular Material";
   features = [
-    {
-      title: "Latest and Greatest",
-      description:
-        "Latest version of Angular, Angular Material and dependencies"
-    },
     {
       title: "Sensibly Compatible",
       description:
@@ -45,11 +40,6 @@ export class AppComponent {
       title: "No-fuss Material Module",
       description:
         "Ready-to-use (and customize) Dependency Module to load Material Components"
-    },
-    {
-      title: "Faster Development",
-      description:
-        "Hot Module Replacement for development workflow and optimized builds for production"
     }
   ];
 

@@ -2,6 +2,10 @@ li {
   padding-bottom: 0.5em;
 }
 
+.mat-toolbar {
+  padding: 2rem;
+}
+
 .mat-button {
   vertical-align: middle;
 }
@@ -16,42 +20,58 @@ li {
 }
 
 .promo {
-  padding: 4rem 3rem 3rem;
-  text-align: center;
+  padding: 2rem 2rem 0;
+  text-align: left;
 }
 
 .promo .mat-h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   line-height: normal;
   font-weight: 300;
 }
 
-.promo .mat-h2 {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  line-height: normal;
-  font-weight: 300;
+.promo .mat-h1 .tagline {
+  color: gray;
 }
 
 .features {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  padding: 2rem 3rem;
+  padding: 2rem;
 }
 
 @media (min-width: 900px) {
+  .mat-toolbar {
+    padding: 4rem 3rem 3rem;
+  }
+  .promo {
+    padding: 4rem 3rem 0;
+  }
+  .promo .mat-h1 {
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .features {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    padding: 2rem 3rem;
   }
 }
 
-.mat-card-title {
-  font-size: 1.25em;
+.mat-card {
+  padding: 2rem;
 }
 
-.mat-card-subtitle {
-  padding-top: 1em;
+.mat-card-title {
+  font-size: 1.5em;
+}
+
+.mat-card-content {
+  font-size: 1rem;
+  padding-top: 0.5em;
 }
 
 .filler {
@@ -59,6 +79,11 @@ li {
 }
 
 footer {
-  padding: 2rem 4rem 4rem;
+  padding: 4rem;
   text-align: center;
+}
+
+footer .mat-flat-button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
