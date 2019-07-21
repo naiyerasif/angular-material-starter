@@ -4,7 +4,6 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run build:themes && ng serve",
-    "start:hmr": "npm run build:themes && ng serve --configuration hmr",
     "build": "npm run build:themes && ng build --prod",
     "build:dev": "npm run build:themes && ng build",
     "build:themes": "bash ./tools/build-themes.sh",

@@ -10,7 +10,6 @@ A simple starter project for Angular Material
 - SASS for theme customization
 - Support for Light and Dark themes
 - Dependency Module to load Material Components
-- Hot Module Replacement for development
 
 ## Development
 
@@ -18,7 +17,7 @@ A simple starter project for Angular Material
 
 > `bash` is a prerequisite for this starter to work. On Windows, you can use Git Bash, Cygwin or WSL.
 
-`npm start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. You can also use `npm run start:hmr` to take advantage of Hot Module Replacement.
+`npm start` launches a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
 #### Build
 
